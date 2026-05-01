@@ -1,0 +1,29 @@
+# Core ML/NLP
+sentence-transformers>=2.2.2
+transformers>=4.35.0
+torch>=2.0.0
+
+# Retrieval
+rank-bm25>=0.2.2
+faiss-cpu>=1.7.4          # use faiss-gpu if CUDA available
+
+# Document parsing
+pymupdf>=1.23.0            # PDF parsing (fitz)
+beautifulsoup4>=4.12.0     # HTML parsing
+lxml>=4.9.0
+
+# Evaluation
+rouge-score>=0.1.2
+bert-score>=0.3.13         # optional, for BERTScore metric
+
+# Configuration & utilities
+pyyaml>=6.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Optional: OpenAI backend
+openai>=1.0.0              # only needed if use_openai: true in config
+
+# Optional: Mistral via Hugging Face
+# accelerate>=0.24.0
+# bitsandbytes>=0.41.0     # for 8-bit quantization
